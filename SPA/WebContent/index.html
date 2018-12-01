@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="controllers/employeecontroller.js"></script>
+<script type="text/javascript" src="controllers/departmentcontroller.js"></script>
+<script type="text/javascript" src="controllers/studentcontroller.js"></script>
+</head>
+<body ng-app="app">
+<a href="#/getemployees">Employee details</a>&nbsp; <!-- 
+1. load EmployeeCtrl,
+2. execute function in EmployeeCtrl, 
+3. $scope.employees and assign data,
+ add the content in partial view (employees.html) -->
+ 
+<a href="#/getdepartments">Department Details</a>&nbsp; 
+<!-- 
+1. load DeptCtrl,
+2. execute function in DeptCtrl, 
+3. $scope.departments and assign data,
+ add the content in partial view (departments.html) -->
+ 
+<a href="#/getstudents">Student Details</a>
+
+<!-- content of employees.html has to get added here -->
+<!-- content of departments.html has to get added here -->
+<div ng-view></div><!-- placeholder, in which the content of partial view will get added -->
+</body>
+</html>
